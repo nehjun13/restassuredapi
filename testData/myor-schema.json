@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["data", "meta"],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "reference_date",
+          "publication_date",
+          "reference_rate",
+          "aggregate_volume",
+          "index",
+          "average_1m",
+          "average_3m",
+          "average_6m"
+        ],
+        "properties": {
+          "reference_date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "publication_date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "reference_rate": { "type": "string" },
+          "aggregate_volume": { "type": "string" },
+          "index": { "type": "string" },
+          "average_1m": { "type": "string" },
+          "average_3m": { "type": "string" },
+          "average_6m": { "type": "string" }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["last_updated", "total_result"],
+      "properties": {
+        "last_updated": { "type": "string" },
+        "total_result": { "type": "integer" }
+      }
+    }
+  }
+}
