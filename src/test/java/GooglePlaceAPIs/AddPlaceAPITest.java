@@ -19,8 +19,8 @@ import utils.Accesspropfile;
 
 public class AddPlaceAPITest extends BaseTest {
 	@Test 
-
-	public static void main(String[] args) {
+public void testAddplace() {
+	//public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		setupReport();
 		test = extent.createTest("'Add a location");

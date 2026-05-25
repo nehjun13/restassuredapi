@@ -12,7 +12,8 @@ import baseTest.BaseTest;
 
 public class getPlaceAPITest extends BaseTest{
 @Test
-	public static void main(String[] args) {
+public void testgetplace() {
+//	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 setupReport();
 test = extent.createTest("Get Place API Test");

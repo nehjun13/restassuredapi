@@ -12,7 +12,8 @@ import static io.restassured.module.jsv.JsonSchemaValidator.*;
 
 public class MYOvernightRateTest {
 @Test
-	public static void main(String[] args) {
+public void testMYOR() {
+//	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		RestAssured.baseURI= Accesspropfile.getproperty("MYbaseURI");
