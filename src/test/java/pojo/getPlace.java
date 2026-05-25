@@ -25,14 +25,14 @@ public class getPlace {
 	private String name;
 	private String phone_number;
 	private String address;
-	private List<String> types;
+	private String types;
 	private String website;
 	private String language;
 
 public getPlace() {
 }
 
-public getPlace(getPlace_location location, String accuracy, String name, String phone_number, String address, List<String> types, String website, String languge) {
+public getPlace(getPlace_location location, String accuracy, String name, String phone_number, String address, String types, String website, String languge) {
 	this.location=location;
 	this.accuracy=accuracy;
 	this.name= name;
@@ -83,11 +83,11 @@ public void setAddress(String address) {
 	this.address = address;
 }
 
-public List<String> getTypes() {
+public String getTypes() {
 	return types;
 }
 
-public void setTypes(List<String> types) {
+public void setTypes(String types) {
 	this.types = types;
 }
 
