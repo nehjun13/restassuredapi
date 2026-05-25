@@ -35,10 +35,12 @@ pipeline {
     }
 
     post {
-        always {
-            archiveArtifacts artifacts: 'target/surefire-reports/**', allowEmptyArchive: true
-            echo '📊 Test report archived'
-        }
+    always {
+        sh 'find . -name "*.xml" -path "*/surefire-reports/*" || echo "No surefire XML found"'
+        junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
+        archiveArtifacts artifacts: 'target/surefire-reports/**', allowEmptyArchive: true
+        echo '📊 Test report archived'
+    }
         success {
             echo '✅ All tests passed!'
         }
