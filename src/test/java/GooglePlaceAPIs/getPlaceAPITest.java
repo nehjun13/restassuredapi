@@ -6,10 +6,12 @@ import io.restassured.response.Response;
 import pojo.getPlace;
 import utils.Accesspropfile;
 import org.junit.Assert;
+import org.junit.Test;
+
 import baseTest.BaseTest;
 
-public class getPlaceAPI extends BaseTest{
-
+public class getPlaceAPITest extends BaseTest{
+@Test
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 setupReport();

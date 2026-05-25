@@ -5,11 +5,13 @@ import io.restassured.response.Response;
 import utils.Accesspropfile;
 import java.io.File;
 
+import org.junit.Test;
+
 import static io.restassured.RestAssured.*;
 import static io.restassured.module.jsv.JsonSchemaValidator.*;
 
-public class MYOvernightRate {
-
+public class MYOvernightRateTest {
+@Test
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
